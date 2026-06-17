@@ -133,7 +133,7 @@ function App() {
 
             <div className="appointment">
               <strong>Next Consultation</strong>
-              <span>Dr. Ananya Rao • 10:30 AM • Ayurveda Specialist</span>
+              <span>Dr.Nikhila Dandu • 10:30 AM • Ayurveda Specialist</span>
             </div>
           </div>
         </motion.div>
