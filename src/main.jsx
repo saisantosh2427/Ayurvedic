@@ -133,7 +133,7 @@ function App() {
 
             <div className="appointment">
               <strong>Next Consultation</strong>
-              <span>Dr.Nikhila Dandu • 10:30 AM • Ayurveda Specialist</span>
+              <span>Dr.Venuka • 10:30 AM • Ayurveda Specialist</span>
             </div>
           </div>
         </motion.div>
@@ -261,7 +261,7 @@ function App() {
         </div>
 
         <div className="footer-actions">
-          <a href="tel:+910000000000"><Phone size={18} /> Call Hospital</a>
+          <a href="tel:+917674933963"><Phone size={18} /> Call Hospital</a>
           <a href="https://maps.google.com" target="_blank"><MapPin size={18} /> View Location</a>
           <a href="mailto:info@vijaywadaayurvedic.com"><MessageCircle size={18} /> Email</a>
         </div>
