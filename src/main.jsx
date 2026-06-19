@@ -18,6 +18,11 @@ import {
   Workflow,
 } from "lucide-react";
 import "./styles.css";
+import homeImage from "./home.png";
+import appointmentImage from "./Appointment.png";
+import doctorConsultImage from "./Docconsult.png";
+import treatmentImage from "./Treat.png";
+import followUpImage from "./PatFollow.png";
 
 const services = [
   {
@@ -47,11 +52,11 @@ const process = [
 ];
 
 const wireframes = [
-  "Home Page",
-  "Appointment Booking",
-  "Doctor Consultation",
-  "Treatment Services",
-  "Patient Follow-up",
+  { title: "Home Page", image: homeImage },
+  { title: "Appointment Booking", image: appointmentImage },
+  { title: "Doctor Consultation", image: doctorConsultImage },
+  { title: "Treatment Services", image: treatmentImage },
+  { title: "Patient Follow-up", image: followUpImage },
 ];
 
 function App() {
@@ -84,7 +89,7 @@ function App() {
           transition={{ duration: 0.75 }}
         >
           <p className="eyebrow">
-            <Sparkles size={16} /> Business Portfolio + UX Case Study
+            <Sparkles size={16} /> UX Case Study
           </p>
           <h1>Ayurvedic hospital website concept focused on trust, care, and easy appointment booking.</h1>
           <p>
@@ -204,24 +209,18 @@ function App() {
 
       <section className="section" id="wireframes">
         <p className="section-label">Wireframing Project</p>
-        <h2>Low-fidelity screen concepts for the hospital website.</h2>
+        <h2>High-fidelity screen concepts for the hospital application.</h2>
 
         <div className="wireframe-grid">
           {wireframes.map((screen) => (
-            <motion.div whileHover={{ y: -8 }} className="wire-card" key={screen}>
+            <motion.div whileHover={{ y: -8 }} className="wire-card" key={screen.title}>
               <div className="wire-header">
                 <span></span><span></span><span></span>
               </div>
-              <div className="wire-body">
-                <div className="wire-line large"></div>
-                <div className="wire-line"></div>
-                <div className="wire-line short"></div>
-                <div className="wire-block"></div>
-                <div className="wire-row">
-                  <div></div><div></div>
-                </div>
+              <div className="wire-image-wrap">
+                <img className="wire-image" src={screen.image} alt={`${screen.title} wireframe`} loading="lazy" />
               </div>
-              <h3>{screen}</h3>
+              <h3>{screen.title}</h3>
             </motion.div>
           ))}
         </div>
@@ -256,13 +255,12 @@ function App() {
 
       <footer id="contact">
         <div>
-          <h2>Vijaywada Ayurvedic Hospital</h2>
-          <p>Responsive website concept for services, appointment booking, and patient education.</p>
+          <h2>Sai Santosh</h2>
+          <p>UI/UX Designer</p>
         </div>
 
         <div className="footer-actions">
-          <a href="tel:+917674933963"><Phone size={18} /> Call Hospital</a>
-          <a href="https://maps.google.com" target="_blank"><MapPin size={18} /> View Location</a>
+          <a href="tel:+917674933963"><Phone size={18} /> Contact</a>
           <a href="mailto:info@vijaywadaayurvedic.com"><MessageCircle size={18} /> Email</a>
         </div>
       </footer>
