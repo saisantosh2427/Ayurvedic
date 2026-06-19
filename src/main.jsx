@@ -102,7 +102,6 @@ function App() {
             <a className="primary" href="#wireframes">
               View Project <ArrowRight size={18} />
             </a>
-            <a className="secondary" href="#contact">Book Consultation</a>
           </div>
         </motion.div>
 
